@@ -35,79 +35,81 @@
         android:id="@+id/checkBox"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="CheckBox"
-        tools:layout_editor_absoluteX="98dp"
-        tools:layout_editor_absoluteY="358dp" />
+        android:text="Hat"
+        tools:layout_editor_absoluteX="200dp"
+        tools:layout_editor_absoluteY="326dp" />
 
     <CheckBox
         android:id="@+id/checkBox2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="CheckBox"
-        tools:layout_editor_absoluteY="390dp"
-        tools:layout_editor_absoluteX="98dp" />
+        android:text="Ears"
+        tools:layout_editor_absoluteX="98dp"
+        tools:layout_editor_absoluteY="358dp" />
 
     <CheckBox
         android:id="@+id/checkBox3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="CheckBox"
-        tools:layout_editor_absoluteY="422dp"
-        tools:layout_editor_absoluteX="98dp" />
+        android:text="Eyebrows"
+        tools:layout_editor_absoluteX="98dp"
+        tools:layout_editor_absoluteY="390dp" />
 
     <CheckBox
         android:id="@+id/checkBox4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="CheckBox"
-        tools:layout_editor_absoluteY="454dp"
-        tools:layout_editor_absoluteX="98dp" />
+        android:text="Eyes"
+        tools:layout_editor_absoluteX="98dp"
+        tools:layout_editor_absoluteY="422dp" />
 
     <CheckBox
         android:id="@+id/checkBox5"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="CheckBox"
-        tools:layout_editor_absoluteY="326dp"
-        tools:layout_editor_absoluteX="98dp" />
+        android:text="Arms"
+        tools:layout_editor_absoluteX="98dp"
+        android:layout_marginBottom="0dp"
+        app:layout_constraintBottom_toTopOf="@+id/checkBox2" />
 
     <CheckBox
         android:id="@+id/checkBox6"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="CheckBox"
-        tools:layout_editor_absoluteX="200dp"
-        tools:layout_editor_absoluteY="326dp" />
+        android:text="Glasses"
+        tools:layout_editor_absoluteX="98dp"
+        tools:layout_editor_absoluteY="454dp" />
 
     <CheckBox
         android:id="@+id/checkBox7"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="CheckBox"
-        tools:layout_editor_absoluteY="358dp"
-        tools:layout_editor_absoluteX="200dp" />
+        android:text="Mouth"
+        tools:layout_editor_absoluteX="200dp"
+        tools:layout_editor_absoluteY="358dp" />
 
     <CheckBox
         android:id="@+id/checkBox8"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="CheckBox"
-        tools:layout_editor_absoluteY="390dp"
-        tools:layout_editor_absoluteX="200dp" />
+        android:text="Mustache"
+        tools:layout_editor_absoluteX="200dp"
+        tools:layout_editor_absoluteY="390dp" />
 
     <CheckBox
         android:id="@+id/checkBox9"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="CheckBox"
-        tools:layout_editor_absoluteY="422dp"
-        tools:layout_editor_absoluteX="200dp" />
+        android:text="Nose"
+        tools:layout_editor_absoluteX="200dp"
+        android:layout_marginBottom="0dp"
+        app:layout_constraintBottom_toTopOf="@+id/checkBox10" />
 
     <CheckBox
         android:id="@+id/checkBox10"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="CheckBox"
-        tools:layout_editor_absoluteY="454dp"
-        tools:layout_editor_absoluteX="200dp" />
+        android:text="Shoes"
+        tools:layout_editor_absoluteX="200dp"
+        tools:layout_editor_absoluteY="454dp" />
 </android.support.constraint.ConstraintLayout>
