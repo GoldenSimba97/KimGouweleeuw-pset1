@@ -40,12 +40,14 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center">
             <CheckBox
-                android:id="@+id/checkBox"
+                android:id="@+id/arms"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/arms"
+
                 tools:layout_editor_absoluteX="200dp"
                 tools:layout_editor_absoluteY="326dp" />
+            <!--android:onClick="addBodyPart"-->
 
             <CheckBox
                 android:id="@+id/checkBox2"
