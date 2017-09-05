@@ -12,7 +12,7 @@
         android:id="@+id/textView"
         android:layout_width="187dp"
         android:layout_height="33dp"
-        android:text="Mr. Potato Head"
+        android:text="@string/potato"
         android:textAppearance="@style/TextAppearance.AppCompat.Headline"
         tools:layout_editor_absoluteX="106dp"
         tools:layout_editor_absoluteY="16dp" />
@@ -21,6 +21,7 @@
         android:id="@+id/imageView"
         android:layout_width="243dp"
         android:layout_height="226dp"
+        android:contentDescription="@string/body"
         app:srcCompat="@drawable/body"
         tools:layout_editor_absoluteX="50dp"
         tools:layout_editor_absoluteY="54dp" />
@@ -33,7 +34,7 @@
             android:id="@+id/checkBox"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Arms"
+            android:text="@string/arms"
             tools:layout_editor_absoluteX="200dp"
             tools:layout_editor_absoluteY="326dp" />
 
@@ -41,7 +42,7 @@
             android:id="@+id/checkBox2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Hat"
+            android:text="@string/hat"
             tools:layout_editor_absoluteX="98dp"
             tools:layout_editor_absoluteY="358dp" />
     </LinearLayout>
@@ -54,7 +55,7 @@
             android:id="@+id/checkBox3"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Ears"
+            android:text="@string/ears"
             tools:layout_editor_absoluteX="98dp"
             tools:layout_editor_absoluteY="390dp" />
 
@@ -62,7 +63,7 @@
             android:id="@+id/checkBox4"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Mouth"
+            android:text="@string/mouth"
             tools:layout_editor_absoluteX="98dp"
             tools:layout_editor_absoluteY="422dp" />
     </LinearLayout>
@@ -75,7 +76,7 @@
             android:id="@+id/checkBox5"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Eyebrows"
+            android:text="@string/eyebrows"
             tools:layout_editor_absoluteX="98dp"
             android:layout_marginBottom="0dp"
             app:layout_constraintBottom_toTopOf="@+id/checkBox2" />
@@ -84,7 +85,7 @@
             android:id="@+id/checkBox6"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Mustache"
+            android:text="@string/mustache"
             tools:layout_editor_absoluteX="98dp"
             tools:layout_editor_absoluteY="454dp" />
     </LinearLayout>
@@ -97,7 +98,7 @@
             android:id="@+id/checkBox7"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Eyes"
+            android:text="@string/eyes"
             tools:layout_editor_absoluteX="200dp"
             tools:layout_editor_absoluteY="358dp" />
 
@@ -105,7 +106,7 @@
             android:id="@+id/checkBox8"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Nose"
+            android:text="@string/nose"
             tools:layout_editor_absoluteX="200dp"
             tools:layout_editor_absoluteY="390dp" />
     </LinearLayout>
@@ -118,7 +119,7 @@
             android:id="@+id/checkBox9"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Glasses"
+            android:text="@string/glasses"
             tools:layout_editor_absoluteX="200dp"
             android:layout_marginBottom="0dp"
             app:layout_constraintBottom_toTopOf="@+id/checkBox10" />
@@ -127,7 +128,7 @@
             android:id="@+id/checkBox10"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Shoes"
+            android:text="@string/shoes"
             tools:layout_editor_absoluteX="200dp"
             tools:layout_editor_absoluteY="454dp" />
     </LinearLayout>
