@@ -7,6 +7,8 @@ import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.CheckBox;
 import android.widget.ImageView;
+import android.widget.Toast;
+
 
 
 public class MainActivity extends AppCompatActivity {
@@ -27,6 +29,8 @@ public class MainActivity extends AppCompatActivity {
         switch (getResources().getConfiguration().orientation) {
             case Configuration.ORIENTATION_PORTRAIT:
                 setContentView(R.layout.activity_main);
+//                final ImageView image = (ImageView)findViewById(R.id.armsim);
+//                image.setVisibility(View.VISIBLE);
                 break;
             case Configuration.ORIENTATION_LANDSCAPE:
                 setContentView(R.layout.landscape);
@@ -36,13 +40,14 @@ public class MainActivity extends AppCompatActivity {
 
     public void addBodyPart(View view) {
         final CheckBox arms = (CheckBox)findViewById(R.id.arms);
-        final ImageView image = (ImageView)findViewById(R.id.armsim);
         arms.setOnClickListener(new OnClickListener() {
             @Override
-            public void onClick(View v) {
-                if (arms.isChecked()) {
+            public void onClick(View view) {
+//                if (arms.isChecked()) {
+                    Toast.makeText(MainActivity.this, "Checkbox Clicked", Toast.LENGTH_SHORT).show();
+                    final ImageView image = (ImageView)findViewById(R.id.armsim);
                     image.setVisibility(View.VISIBLE);
-                }
+//                }
             }
         });
     }
