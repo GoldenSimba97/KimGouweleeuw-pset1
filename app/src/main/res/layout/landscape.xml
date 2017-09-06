@@ -19,15 +19,122 @@
         tools:layout_editor_absoluteX="106dp"
         tools:layout_editor_absoluteY="16dp" />
 
-    <ImageView
-        android:id="@+id/imageView"
-        android:layout_width="229dp"
-        android:layout_height="203dp"
-        android:contentDescription="@string/body"
-        android:gravity="center"
-        app:srcCompat="@drawable/body"
-        tools:layout_editor_absoluteX="50dp"
-        tools:layout_editor_absoluteY="54dp" />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="210dp"
+        android:gravity="center">
+
+        <ImageView
+            android:id="@+id/bodyim"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/body"
+            android:gravity="center"
+            app:srcCompat="@drawable/body"
+            tools:layout_editor_absoluteX="50dp"
+            tools:layout_editor_absoluteY="54dp" />
+
+        <ImageView
+            android:id="@+id/armsim"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/arms"
+            android:gravity="center"
+            app:srcCompat="@drawable/arms"
+            tools:layout_editor_absoluteX="50dp"
+            tools:layout_editor_absoluteY="54dp" />
+
+        <ImageView
+            android:id="@+id/earsim"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/ears"
+            android:gravity="center"
+            app:srcCompat="@drawable/ears"
+            tools:layout_editor_absoluteX="50dp"
+            tools:layout_editor_absoluteY="54dp" />
+
+        <ImageView
+            android:id="@+id/eyebrowsim"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/eyebrows"
+            android:gravity="center"
+            app:srcCompat="@drawable/eyebrows"
+            tools:layout_editor_absoluteX="50dp"
+            tools:layout_editor_absoluteY="54dp" />
+
+        <ImageView
+            android:id="@+id/eyesim"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/eyes"
+            android:gravity="center"
+            app:srcCompat="@drawable/eyes"
+            tools:layout_editor_absoluteX="50dp"
+            tools:layout_editor_absoluteY="54dp" />
+
+        <ImageView
+            android:id="@+id/glassesim"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/glasses"
+            android:gravity="center"
+            app:srcCompat="@drawable/glasses"
+            tools:layout_editor_absoluteX="50dp"
+            tools:layout_editor_absoluteY="54dp" />
+
+        <ImageView
+            android:id="@+id/hatim"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/hat"
+            android:gravity="center"
+            app:srcCompat="@drawable/hat"
+            tools:layout_editor_absoluteX="50dp"
+            tools:layout_editor_absoluteY="54dp" />
+
+        <ImageView
+            android:id="@+id/mouthim"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/mouth"
+            android:gravity="center"
+            app:srcCompat="@drawable/mouth"
+            tools:layout_editor_absoluteX="50dp"
+            tools:layout_editor_absoluteY="54dp" />
+
+        <ImageView
+            android:id="@+id/mustacheim"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/mustache"
+            android:gravity="center"
+            app:srcCompat="@drawable/mustache"
+            tools:layout_editor_absoluteX="50dp"
+            tools:layout_editor_absoluteY="54dp" />
+
+        <ImageView
+            android:id="@+id/noseim"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/nose"
+            android:gravity="center"
+            app:srcCompat="@drawable/nose"
+            tools:layout_editor_absoluteX="50dp"
+            tools:layout_editor_absoluteY="54dp" />
+
+        <ImageView
+            android:id="@+id/shoesim"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/shoes"
+            android:gravity="center"
+            app:srcCompat="@drawable/shoes"
+            tools:layout_editor_absoluteX="50dp"
+            tools:layout_editor_absoluteY="54dp" />
+
+    </RelativeLayout>
 
     <LinearLayout
         android:orientation="horizontal"
