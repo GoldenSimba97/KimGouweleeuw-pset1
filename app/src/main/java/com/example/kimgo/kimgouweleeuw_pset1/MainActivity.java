@@ -6,6 +6,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.CheckBox;
+import android.widget.ImageView;
 
 
 public class MainActivity extends AppCompatActivity {
@@ -33,17 +34,18 @@ public class MainActivity extends AppCompatActivity {
         }
     }
 
-//    public void addBodyPart(View view) {
-//        arms = (CheckBox) findViewById(R.id.arms);
-//        arms.setOnClickListener(new OnClickListener() {
-//            @Override
-//            public void onClick(View v) {
-//                if (arms.isChecked()) {
-//
-//                }
-//            }
-//        });
-//    }
+    public void addBodyPart(View view) {
+        final CheckBox arms = (CheckBox)findViewById(R.id.arms);
+        final ImageView image = (ImageView)findViewById(R.id.armsim);
+        arms.setOnClickListener(new OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if (arms.isChecked()) {
+                    image.setVisibility(View.VISIBLE);
+                }
+            }
+        });
+    }
 
 //    private void addImage() {
 //
