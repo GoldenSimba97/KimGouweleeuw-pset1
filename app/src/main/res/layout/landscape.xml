@@ -21,7 +21,7 @@
 
     <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="210dp"
+        android:layout_height="180dp"
         android:gravity="center">
 
         <ImageView
@@ -146,6 +146,12 @@
 
     </RelativeLayout>
 
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/click" />
+
     <LinearLayout
         android:orientation="horizontal"
         android:layout_width="wrap_content"
@@ -155,7 +161,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
             <CheckBox
-                android:id="@+id/checkBox"
+                android:id="@+id/arms"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/arms"
@@ -163,7 +169,7 @@
                 tools:layout_editor_absoluteY="326dp" />
 
             <CheckBox
-                android:id="@+id/checkBox2"
+                android:id="@+id/hat"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/hat"
@@ -176,7 +182,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
             <CheckBox
-                android:id="@+id/checkBox3"
+                android:id="@+id/ears"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/ears"
@@ -184,7 +190,7 @@
                 tools:layout_editor_absoluteY="390dp" />
 
             <CheckBox
-                android:id="@+id/checkBox4"
+                android:id="@+id/mouth"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/mouth"
@@ -197,7 +203,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
             <CheckBox
-                android:id="@+id/checkBox5"
+                android:id="@+id/eyebrows"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/eyebrows"
@@ -206,7 +212,7 @@
                 app:layout_constraintBottom_toTopOf="@+id/checkBox2" />
 
             <CheckBox
-                android:id="@+id/checkBox6"
+                android:id="@+id/mustache"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/mustache"
@@ -219,7 +225,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
             <CheckBox
-                android:id="@+id/checkBox7"
+                android:id="@+id/eyes"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/eyes"
@@ -227,7 +233,7 @@
                 tools:layout_editor_absoluteY="358dp" />
 
             <CheckBox
-                android:id="@+id/checkBox8"
+                android:id="@+id/nose"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/nose"
@@ -240,7 +246,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
             <CheckBox
-                android:id="@+id/checkBox9"
+                android:id="@+id/glasses"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="0dp"
@@ -249,7 +255,7 @@
                 tools:layout_editor_absoluteX="200dp" />
 
             <CheckBox
-                android:id="@+id/checkBox10"
+                android:id="@+id/shoes"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/shoes"

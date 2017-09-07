@@ -51,14 +51,28 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void addBodyPart(View view) {
-        final CheckBox arms = (CheckBox)findViewById(R.id.arms);
-        final ImageView image = (ImageView)findViewById(R.id.armsim);
-        if (arms.isChecked()) {
-//            Toast.makeText(MainActivity.this, "Checkbox Clicked", Toast.LENGTH_SHORT).show();
-//                    ImageView image = (ImageView)findViewById(R.id.armsim);
-            image.setVisibility(View.VISIBLE);
-        } else {
-            image.setVisibility(View.INVISIBLE);
+//        final CheckBox arms = (CheckBox)findViewById(R.id.arms);
+//        final ImageView image = (ImageView)findViewById(R.id.armsim);
+
+        switch(view.getId()) {
+            case R.id.arms:
+                ImageView image = (ImageView)findViewById(R.id.armsim);
+                if (((CheckBox) view).isChecked()) {
+                    image.setVisibility(View.VISIBLE);
+                    break;
+                } else {
+                    image.setVisibility(View.INVISIBLE);
+                    break;
+                }
+            case R.id.hat:
+                ImageView image2 = (ImageView)findViewById(R.id.hatim);
+                if (((CheckBox) view).isChecked()) {
+                    image2.setVisibility(View.VISIBLE);
+                    break;
+                } else {
+                    image2.setVisibility(View.INVISIBLE);
+                    break;
+                }
         }
     }
 

@@ -1,6 +1,7 @@
 <resources>
     <string name="app_name">KimGouweleeuw-pset1</string>
     <string name="potato">Mr. Potato Head</string>
+    <string name="click">Click on the checkboxes to edit your potato</string>
     <string name="arms">Arms</string>
     <string name="body">Body</string>
     <string name="ears">Ears</string>
