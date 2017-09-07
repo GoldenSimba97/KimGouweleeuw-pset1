@@ -38,18 +38,28 @@ public class MainActivity extends AppCompatActivity {
         }
     }
 
+    /* Create bundle when onSaveInstanceState is called */
+    @Override
+    public void onSaveInstanceState(Bundle outState) {
+        super.onSaveInstanceState(outState);
+    }
+
+    /* Do something with the bundle when the state is restored */
+    @Override
+    public void onRestoreInstanceState(Bundle inState) {
+        super.onRestoreInstanceState(inState);
+    }
+
     public void addBodyPart(View view) {
         final CheckBox arms = (CheckBox)findViewById(R.id.arms);
-        arms.setOnClickListener(new OnClickListener() {
-            @Override
-            public void onClick(View view) {
-//                if (arms.isChecked()) {
-                    Toast.makeText(MainActivity.this, "Checkbox Clicked", Toast.LENGTH_SHORT).show();
-                    final ImageView image = (ImageView)findViewById(R.id.armsim);
-                    image.setVisibility(View.VISIBLE);
-//                }
-            }
-        });
+        final ImageView image = (ImageView)findViewById(R.id.armsim);
+        if (arms.isChecked()) {
+//            Toast.makeText(MainActivity.this, "Checkbox Clicked", Toast.LENGTH_SHORT).show();
+//                    ImageView image = (ImageView)findViewById(R.id.armsim);
+            image.setVisibility(View.VISIBLE);
+        } else {
+            image.setVisibility(View.INVISIBLE);
+        }
     }
 
 //    private void addImage() {
