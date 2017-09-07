@@ -4,33 +4,20 @@ import android.content.res.Configuration;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
-import android.view.View.OnClickListener;
 import android.widget.CheckBox;
 import android.widget.ImageView;
-import android.widget.Toast;
-
 
 
 public class MainActivity extends AppCompatActivity {
 
-    private CheckBox arms;
-//    private Integer images[] = {R.drawable.arms, R.drawable.ears, R.drawable.eyebrows,
-//            R.drawable.eyes, R.drawable.glasses, R.drawable.hat, R.drawable.mouth,
-//            R.drawable.mustache, R.drawable.nose, R.drawable.shoes};
-//    @Override
-//    protected void onCreate(Bundle savedInstanceState) {
-//        super.onCreate(savedInstanceState);
-//        setContentView(R.layout.activity_main);
-//    }
-
+    /* Switch between portrait and landscape orientation when
+     * state gets changed */
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         switch (getResources().getConfiguration().orientation) {
             case Configuration.ORIENTATION_PORTRAIT:
                 setContentView(R.layout.activity_main);
-//                final ImageView image = (ImageView)findViewById(R.id.armsim);
-//                image.setVisibility(View.VISIBLE);
                 break;
             case Configuration.ORIENTATION_LANDSCAPE:
                 setContentView(R.layout.landscape);
@@ -42,18 +29,136 @@ public class MainActivity extends AppCompatActivity {
     @Override
     public void onSaveInstanceState(Bundle outState) {
         super.onSaveInstanceState(outState);
+
+        ImageView armsim = (ImageView)findViewById(R.id.armsim);
+        int armsval = armsim.getVisibility();
+        if(armsval == View.VISIBLE) {
+            outState.putInt("arms",1);
+        }
+
+        ImageView earsim = (ImageView)findViewById(R.id.earsim);
+        int earsval = earsim.getVisibility();
+        if(earsval == View.VISIBLE) {
+            outState.putInt("ears",1);
+        }
+
+        ImageView eyebrowsim = (ImageView)findViewById(R.id.eyebrowsim);
+        int eyebrowsval = eyebrowsim.getVisibility();
+        if(eyebrowsval == View.VISIBLE) {
+            outState.putInt("eyebrows",1);
+        }
+
+        ImageView eyesim = (ImageView)findViewById(R.id.eyesim);
+        int eyesval = eyesim.getVisibility();
+        if(eyesval == View.VISIBLE) {
+            outState.putInt("eyes",1);
+        }
+
+        ImageView glassesim = (ImageView)findViewById(R.id.glassesim);
+        int glassesval = glassesim.getVisibility();
+        if(glassesval == View.VISIBLE) {
+            outState.putInt("glasses",1);
+        }
+
+        ImageView hatim = (ImageView)findViewById(R.id.hatim);
+        int hatval = hatim.getVisibility();
+        if(hatval == View.VISIBLE) {
+            outState.putInt("hat",1);
+        }
+
+        ImageView mouthim = (ImageView)findViewById(R.id.mouthim);
+        int mouthval = mouthim.getVisibility();
+        if(mouthval == View.VISIBLE) {
+            outState.putInt("mouth",1);
+        }
+
+        ImageView mustacheim = (ImageView)findViewById(R.id.mustacheim);
+        int mustacheval = mustacheim.getVisibility();
+        if(mustacheval == View.VISIBLE) {
+            outState.putInt("mustache",1);
+        }
+
+        ImageView noseim = (ImageView)findViewById(R.id.noseim);
+        int noseval = noseim.getVisibility();
+        if(noseval == View.VISIBLE) {
+            outState.putInt("nose",1);
+        }
+
+        ImageView shoesim = (ImageView)findViewById(R.id.shoesim);
+        int shoesval = shoesim.getVisibility();
+        if(shoesval == View.VISIBLE) {
+            outState.putInt("shoes",1);
+        }
     }
 
-    /* Do something with the bundle when the state is restored */
+    /* If image was visible in previous state, this will be restored */
     @Override
     public void onRestoreInstanceState(Bundle inState) {
         super.onRestoreInstanceState(inState);
+
+        ImageView armsim = (ImageView)findViewById(R.id.armsim);
+        int armsval = inState.getInt("arms",0);
+        if(armsval == 1) {
+            armsim.setVisibility(View.VISIBLE);
+        }
+
+        ImageView earsim = (ImageView)findViewById(R.id.earsim);
+        int earsval = inState.getInt("ears",0);
+        if(earsval == 1) {
+            earsim.setVisibility(View.VISIBLE);
+        }
+
+        ImageView eyebrowsim = (ImageView)findViewById(R.id.eyebrowsim);
+        int eyebrowsval = inState.getInt("eyebrows",0);
+        if(eyebrowsval == 1) {
+            eyebrowsim.setVisibility(View.VISIBLE);
+        }
+
+        ImageView eyesim = (ImageView)findViewById(R.id.eyesim);
+        int eyesval = inState.getInt("eyes",0);
+        if(eyesval == 1) {
+            eyesim.setVisibility(View.VISIBLE);
+        }
+
+        ImageView glassesim = (ImageView)findViewById(R.id.glassesim);
+        int glassesval = inState.getInt("glasses",0);
+        if(glassesval == 1) {
+            glassesim.setVisibility(View.VISIBLE);
+        }
+
+        ImageView hatim = (ImageView)findViewById(R.id.hatim);
+        int hatval = inState.getInt("hat",0);
+        if(hatval == 1) {
+            hatim.setVisibility(View.VISIBLE);
+        }
+
+        ImageView mouthim = (ImageView)findViewById(R.id.mouthim);
+        int mouthval = inState.getInt("mouth",0);
+        if(mouthval == 1) {
+            mouthim.setVisibility(View.VISIBLE);
+        }
+
+        ImageView mustacheim = (ImageView)findViewById(R.id.mustacheim);
+        int mustacheval = inState.getInt("mustache",0);
+        if(mustacheval == 1) {
+            mustacheim.setVisibility(View.VISIBLE);
+        }
+
+        ImageView noseim = (ImageView)findViewById(R.id.noseim);
+        int noseval = inState.getInt("nose",0);
+        if(noseval == 1) {
+            noseim.setVisibility(View.VISIBLE);
+        }
+
+        ImageView shoesim = (ImageView)findViewById(R.id.shoesim);
+        int shoesval = inState.getInt("shoes",0);
+        if(shoesval == 1) {
+            shoesim.setVisibility(View.VISIBLE);
+        }
     }
 
+    /* Adds the parts of Mr. Potato when the corresponding checkbox is checked */
     public void addBodyPart(View view) {
-//        final CheckBox arms = (CheckBox)findViewById(R.id.arms);
-//        final ImageView image = (ImageView)findViewById(R.id.armsim);
-
         switch(view.getId()) {
             case R.id.arms:
                 ImageView image = (ImageView)findViewById(R.id.armsim);
@@ -147,11 +252,4 @@ public class MainActivity extends AppCompatActivity {
                 }
         }
     }
-
-//    private void addImage() {
-//
-//        final ImageView imageView = (ImageView) findViewById(R.id.imageDisplay);
-//        imageView.setImageResource(images[currImage]);
-//
-//    }
 }
