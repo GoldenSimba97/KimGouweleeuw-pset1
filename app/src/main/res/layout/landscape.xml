@@ -166,7 +166,8 @@
                 android:layout_height="wrap_content"
                 android:text="@string/arms"
                 tools:layout_editor_absoluteX="200dp"
-                tools:layout_editor_absoluteY="326dp" />
+                tools:layout_editor_absoluteY="326dp"
+                android:onClick="addBodyPart"/>
 
             <CheckBox
                 android:id="@+id/hat"
@@ -174,7 +175,8 @@
                 android:layout_height="wrap_content"
                 android:text="@string/hat"
                 tools:layout_editor_absoluteX="98dp"
-                tools:layout_editor_absoluteY="358dp" />
+                tools:layout_editor_absoluteY="358dp"
+                android:onClick="addBodyPart"/>
         </LinearLayout>
 
         <LinearLayout
@@ -187,7 +189,8 @@
                 android:layout_height="wrap_content"
                 android:text="@string/ears"
                 tools:layout_editor_absoluteX="98dp"
-                tools:layout_editor_absoluteY="390dp" />
+                tools:layout_editor_absoluteY="390dp"
+                android:onClick="addBodyPart"/>
 
             <CheckBox
                 android:id="@+id/mouth"
@@ -195,7 +198,8 @@
                 android:layout_height="wrap_content"
                 android:text="@string/mouth"
                 tools:layout_editor_absoluteX="98dp"
-                tools:layout_editor_absoluteY="422dp" />
+                tools:layout_editor_absoluteY="422dp"
+                android:onClick="addBodyPart"/>
         </LinearLayout>
 
         <LinearLayout
@@ -209,7 +213,8 @@
                 android:text="@string/eyebrows"
                 tools:layout_editor_absoluteX="98dp"
                 android:layout_marginBottom="0dp"
-                app:layout_constraintBottom_toTopOf="@+id/checkBox2" />
+                app:layout_constraintBottom_toTopOf="@+id/checkBox2"
+                android:onClick="addBodyPart"/>
 
             <CheckBox
                 android:id="@+id/mustache"
@@ -217,7 +222,8 @@
                 android:layout_height="wrap_content"
                 android:text="@string/mustache"
                 tools:layout_editor_absoluteX="98dp"
-                tools:layout_editor_absoluteY="454dp" />
+                tools:layout_editor_absoluteY="454dp"
+                android:onClick="addBodyPart"/>
         </LinearLayout>
 
         <LinearLayout
@@ -230,7 +236,8 @@
                 android:layout_height="wrap_content"
                 android:text="@string/eyes"
                 tools:layout_editor_absoluteX="200dp"
-                tools:layout_editor_absoluteY="358dp" />
+                tools:layout_editor_absoluteY="358dp"
+                android:onClick="addBodyPart"/>
 
             <CheckBox
                 android:id="@+id/nose"
@@ -238,7 +245,8 @@
                 android:layout_height="wrap_content"
                 android:text="@string/nose"
                 tools:layout_editor_absoluteX="200dp"
-                tools:layout_editor_absoluteY="390dp" />
+                tools:layout_editor_absoluteY="390dp"
+                android:onClick="addBodyPart"/>
         </LinearLayout>
 
         <LinearLayout
@@ -252,7 +260,8 @@
                 android:layout_marginBottom="0dp"
                 android:text="@string/glasses"
                 app:layout_constraintBottom_toTopOf="@+id/checkBox10"
-                tools:layout_editor_absoluteX="200dp" />
+                tools:layout_editor_absoluteX="200dp"
+                android:onClick="addBodyPart"/>
 
             <CheckBox
                 android:id="@+id/shoes"
@@ -260,7 +269,8 @@
                 android:layout_height="wrap_content"
                 android:text="@string/shoes"
                 tools:layout_editor_absoluteX="200dp"
-                tools:layout_editor_absoluteY="454dp" />
+                tools:layout_editor_absoluteY="454dp"
+                android:onClick="addBodyPart"/>
         </LinearLayout>
     </LinearLayout>
 </LinearLayout>

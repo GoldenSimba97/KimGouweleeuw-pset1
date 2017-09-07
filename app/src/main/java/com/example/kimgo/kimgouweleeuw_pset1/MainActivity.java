@@ -64,13 +64,85 @@ public class MainActivity extends AppCompatActivity {
                     image.setVisibility(View.INVISIBLE);
                     break;
                 }
-            case R.id.hat:
-                ImageView image2 = (ImageView)findViewById(R.id.hatim);
+            case R.id.ears:
+                ImageView image2 = (ImageView)findViewById(R.id.earsim);
                 if (((CheckBox) view).isChecked()) {
                     image2.setVisibility(View.VISIBLE);
                     break;
                 } else {
                     image2.setVisibility(View.INVISIBLE);
+                    break;
+                }
+            case R.id.eyebrows:
+                ImageView image3 = (ImageView)findViewById(R.id.eyebrowsim);
+                if (((CheckBox) view).isChecked()) {
+                    image3.setVisibility(View.VISIBLE);
+                    break;
+                } else {
+                    image3.setVisibility(View.INVISIBLE);
+                    break;
+                }
+            case R.id.eyes:
+                ImageView image4 = (ImageView)findViewById(R.id.eyesim);
+                if (((CheckBox) view).isChecked()) {
+                    image4.setVisibility(View.VISIBLE);
+                    break;
+                } else {
+                    image4.setVisibility(View.INVISIBLE);
+                    break;
+                }
+            case R.id.glasses:
+                ImageView image5 = (ImageView)findViewById(R.id.glassesim);
+                if (((CheckBox) view).isChecked()) {
+                    image5.setVisibility(View.VISIBLE);
+                    break;
+                } else {
+                    image5.setVisibility(View.INVISIBLE);
+                    break;
+                }
+            case R.id.hat:
+                ImageView image6 = (ImageView)findViewById(R.id.hatim);
+                if (((CheckBox) view).isChecked()) {
+                    image6.setVisibility(View.VISIBLE);
+                    break;
+                } else {
+                    image6.setVisibility(View.INVISIBLE);
+                    break;
+                }
+            case R.id.mouth:
+                ImageView image7 = (ImageView)findViewById(R.id.mouthim);
+                if (((CheckBox) view).isChecked()) {
+                    image7.setVisibility(View.VISIBLE);
+                    break;
+                } else {
+                    image7.setVisibility(View.INVISIBLE);
+                    break;
+                }
+            case R.id.mustache:
+                ImageView image8 = (ImageView)findViewById(R.id.mustacheim);
+                if (((CheckBox) view).isChecked()) {
+                    image8.setVisibility(View.VISIBLE);
+                    break;
+                } else {
+                    image8.setVisibility(View.INVISIBLE);
+                    break;
+                }
+            case R.id.nose:
+                ImageView image9 = (ImageView)findViewById(R.id.noseim);
+                if (((CheckBox) view).isChecked()) {
+                    image9.setVisibility(View.VISIBLE);
+                    break;
+                } else {
+                    image9.setVisibility(View.INVISIBLE);
+                    break;
+                }
+            case R.id.shoes:
+                ImageView image10 = (ImageView)findViewById(R.id.shoesim);
+                if (((CheckBox) view).isChecked()) {
+                    image10.setVisibility(View.VISIBLE);
+                    break;
+                } else {
+                    image10.setVisibility(View.INVISIBLE);
                     break;
                 }
         }
